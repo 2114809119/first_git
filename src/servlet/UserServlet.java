@@ -33,7 +33,7 @@ public class UserServlet extends HttpServlet {
 		UserDaoImpl us = new UserDaoImpl();
 		User user = new User();
 		//获得页面上的数据
-		String name = req.getParameter("name");
+		String name = req.getParameter("张三");
 		//页面上获得的所有数据都是String类型，而年龄是int类型
 		//（包装类）对数据进行强转
 		int age = Integer.parseInt(req.getParameter("age"));
